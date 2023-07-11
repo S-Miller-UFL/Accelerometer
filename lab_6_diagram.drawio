@@ -1,0 +1,105 @@
+<mxfile host="app.diagrams.net" modified="2023-07-11T23:18:24.233Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="8YZAPAxvJz4v9NnYles_" version="21.5.0" type="device">
+  <diagram name="Page-1" id="qsa8lmpZ-Dn-6WaB0Kn6">
+    <mxGraphModel dx="829" dy="515" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aVugkzaTR4xHI4REmSyq-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aVugkzaTR4xHI4REmSyq-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="236.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-2" value="START" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="139.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-5" value="ROUTINE &quot;MAIN&quot;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="237.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aVugkzaTR4xHI4REmSyq-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="755" y="237.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-7" value="ROUTINE &quot;MAIN&quot;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="695" y="139.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aVugkzaTR4xHI4REmSyq-10" target="aVugkzaTR4xHI4REmSyq-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-10" value="CALL SUBROUTINE &quot;SPI_INIT&quot;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="695" y="237.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aVugkzaTR4xHI4REmSyq-11" target="aVugkzaTR4xHI4REmSyq-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-11" value="LOOP" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="695" y="335.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="aVugkzaTR4xHI4REmSyq-13" target="aVugkzaTR4xHI4REmSyq-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-13" value="PASS &quot;0X2A&quot; TO SUBROUTINE &quot;SPI_WRITE&quot;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="695" y="433.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="aVugkzaTR4xHI4REmSyq-16" target="aVugkzaTR4xHI4REmSyq-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-16" value="SUBROUTINE &quot;SPI_INIT&quot;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="888" y="139.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aVugkzaTR4xHI4REmSyq-17" target="aVugkzaTR4xHI4REmSyq-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-17" value="SET SPI PINS TO IDLE" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="888" y="237.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="aVugkzaTR4xHI4REmSyq-19" target="aVugkzaTR4xHI4REmSyq-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-19" value="SET SPI PIN DIRECTIONS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="888" y="335.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-22" value="INITIALIZE SPI CONTROL REGISTER" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="888" y="433.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="aVugkzaTR4xHI4REmSyq-29" target="aVugkzaTR4xHI4REmSyq-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-29" value="SUBROUTINE &quot;SPI_WRITE&quot;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="1077" y="134" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aVugkzaTR4xHI4REmSyq-31" target="aVugkzaTR4xHI4REmSyq-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-31" value="TURN ON CHIP SELECT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1077" y="232" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aVugkzaTR4xHI4REmSyq-33" target="aVugkzaTR4xHI4REmSyq-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-33" value="LOAD DATA INTO SPI DATA REGISTER" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1077" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-34" value="TURN OFF CHIP SELECT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1077" y="537" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-35" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aVugkzaTR4xHI4REmSyq-37" target="aVugkzaTR4xHI4REmSyq-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-36" value="0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aVugkzaTR4xHI4REmSyq-37" target="aVugkzaTR4xHI4REmSyq-37">
+          <mxGeometry x="-0.3864" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1059" y="448" />
+              <mxPoint x="1059" y="395" />
+              <mxPoint x="1137" y="395" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aVugkzaTR4xHI4REmSyq-37" value="SPI DONE" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1097" y="408" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
