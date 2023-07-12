@@ -1,4 +1,4 @@
-lsm6ds3tr.d lsm6ds3tr.o: .././lsm6ds3tr.c \
+lab6_4.d lab6_4.o: .././lab6_4.C .././lsm6dsl.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h \
@@ -11,7 +11,9 @@ lsm6ds3tr.d lsm6ds3tr.o: .././lsm6ds3tr.c \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\xmega.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h \
- .././lsm6ds3tr.h .././lsm6ds3tr_registers.h
+ .././lsm6dsl_registers.h .././spi.h
+
+.././lsm6dsl.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
 
@@ -37,6 +39,6 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h:
 
-.././lsm6ds3tr.h:
+.././lsm6dsl_registers.h:
 
-.././lsm6ds3tr_registers.h:
+.././spi.h:

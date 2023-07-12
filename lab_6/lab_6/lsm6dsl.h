@@ -21,10 +21,23 @@
 
 #define LSM6DSL_SPI_READ_STROBE_bm 				0x80
 #define LSM6DSL_SPI_WRITE_STROBE_bm				0x00
-
+//Miller, july 12 2023: added macros here:
+#define LSM6DSL_RESET_DEVICE_BM	(0x01<<0)
+#define LSM6DSL_ENABLE_XAXIS (0X01 << 7)
+#define LSM6DSL_ENABLE_YAXIS (0X01 << 6)
+#define LSM6DSL_ENABLE_ZAXIS (0X01 << 5)
+#define LSM6DSL_ENABLE_ALLAXIS (LSM6DSL_ENABLE_XAXIS|LSM6DSL_ENABLE_YAXIS|LSM6DSL_ENABLE_ZAXIS)
+#define LSM6DSL_SCALE_2 ((0X00 <<3) |(0X00 << 2))
+#define LSM6DSL_SCALE_16 ((0X00 <<3) |(0X01 << 2))
+#define LSM6DSL_SCALE_4 ((0X01 <<3) |(0X00 << 2))
+#define LSM6DSL_SCALE_8 ((0X01 <<3) |(0X01 << 2))
+#define LSM6DSL_DRDY_XL_EN_BM (0X01<<0)
+#define ATX128A1U_IMU_INT1_PIN_BM (0x01 <<6)
+#define ATX128A1U_IMU_INT2_PIN_BM (0x01 <<7)
+#define ATX128A1U_RISING_EDGE_SENSE (0X01 <<0)
 /********************************END OF MACROS*********************************/
 
-
+#include <avr/io.h>
 /*******************************CUSTOM DATA TYPES******************************/
 
 /* Used to differentiate the accelerometer and gyroscope within the LSM6DSL. */
@@ -62,7 +75,9 @@ typedef union lsm6dsl_data
 
 /*****************************FUNCTION PROTOTYPES******************************/
 
-/* INSERT YOUR LSM6DSL FUNCTION PROTOTYPES HERE. */
+void lsm_write(uint8_t reg_addr, uint8_t data);
+uint8_t lsm_read(uint8_t reg_addr);
+void lsm_init(void);
 
 /**************************END OF FUNCTION PROTOTYPES**************************/
 

@@ -2,11 +2,11 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
-lab6_2.c
-
-lsm6ds3tr.c
+lab6_4.C
 
 lsm6dsl.c
+
+spi.c
 
 usart.c
 

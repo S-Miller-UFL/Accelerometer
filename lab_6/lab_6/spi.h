@@ -62,7 +62,6 @@ void spi_write(uint8_t data);
   Output(s): 8-bit value read from the relevant SPI module.
 ------------------------------------------------------------------------------*/
 uint8_t spi_read(void);
-
 /**************************END OF FUNCTION PROTOTYPES**************************/
 
 #endif // End of header guard.

@@ -123,16 +123,13 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="lab6_2.c">
+    <None Include="lab6_2.c">
       <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="lsm6ds3tr.c">
+    </None>
+    <None Include="lab6_3.c">
       <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="lsm6ds3tr.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="lsm6ds3tr_registers.h">
+    </None>
+    <Compile Include="lab6_4.C">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="lsm6dsl.c">
@@ -144,12 +141,9 @@
     <Compile Include="lsm6dsl_registers.h">
       <SubType>compile</SubType>
     </Compile>
-    <None Include="main.c">
+    <Compile Include="spi.c">
       <SubType>compile</SubType>
-    </None>
-    <None Include="spi.c">
-      <SubType>compile</SubType>
-    </None>
+    </Compile>
     <Compile Include="spi.h">
       <SubType>compile</SubType>
     </Compile>
