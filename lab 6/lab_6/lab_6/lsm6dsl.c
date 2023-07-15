@@ -58,6 +58,7 @@ uint8_t LSM_read(uint8_t reg_addr)
 }
 void LSM_init(void)
 {
+
 	//restart device
 	lsm_write(CTRL3_C,LSM6DSL_RESET_DEVICE_BM | LSM6DSL_INT1_MAKE_ACTIVE_LOW);
 	//enable all axes
@@ -66,9 +67,14 @@ void LSM_init(void)
 	lsm_write((CTRL1_XL),((5<<4)|LSM6DSL_SCALE_2));
 	//ODR = 208 HZ
 	lsm_write(INT1_CTRL,LSM6DSL_DRDY_XL_EN_BM);
-	//enable interrupt detection on port c PIN 7 of atx
-	PORTC_DIRCLR = (0|ATX128A1U_IMU_INT1_PIN_BM);
-	PORTC_PIN7CTRL= (0| ATX128A1U_ACTIVE_LOW_SENSE);
-	PORTC_INTCTRL = (0|ATX128A1U_INT0_EN_MED_BM);
+	/*enable interrupt detection on port c PIN 6 of atx*/
+	//set pin 6 as input
+	PORTC.DIRCLR = (0|PIN6_bm);
+	//enable interrupts on pin 6
+	PORTC.INT0MASK = (0|PIN6_bm);
+	//make it sense active low
+	PORTC.PIN6CTRL= (0|PORT_ISC_LEVEL_gc);
+	//make it medium priority
+	PORTC.INTCTRL = (0|PORT_INT0LVL_MED_gc);
 }
 /***************************END OF FUNCTION DEFINITIONS************************/

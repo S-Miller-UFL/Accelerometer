@@ -3,7 +3,7 @@
 //Name: Steven Miller
 //Class #: 11318
 //PI Name: Anthony Stross
-//Description: gets imus acceleration data
+//Description: gets imus acceleration data and outputs it to the computer
 //*******************************************
 
 /********************************DEPENDENCIES**********************************/
@@ -26,25 +26,12 @@ int main(void)
 	intr_init();
 	uint8_t data = 0;
 	accel_flag = 0;
-	/*
-	data = LSM_read((OUTX_L_XL));
-	data = LSM_read((OUTX_L_XL));
-	usartd0_out_char(data);
-	data = LSM_read((OUTX_H_XL));
-	usartd0_out_char(data);
-	data = LSM_read((OUTY_L_XL));
-	usartd0_out_char(data);
-	data = LSM_read((OUTY_H_XL));
-	usartd0_out_char(data);
-	data = LSM_read((OUTZ_L_XL));
-	usartd0_out_char(data);
-	data = LSM_read((OUTZ_H_XL));
-	usartd0_out_char(data);
-	*/
+	wakeup_imu();
 	while(1)
 	{
 		if(accel_flag == 1)
 		{
+			accel_flag = 0;
 			//send out data
 			//spi data register
 			data = LSM_read((OUTX_L_XL));
@@ -60,8 +47,7 @@ int main(void)
 			usartd0_out_char(data);
 			data = LSM_read((OUTZ_H_XL));
 			usartd0_out_char(data);
-			accel_flag = 0;
-			PORTC_INTCTRL = (0|PORTC_INT0MASK);
+			PORTC.INTCTRL = (PORT_INT0LVL_MED_gc);
 		}
 	}
 	return 0;
@@ -70,9 +56,8 @@ int main(void)
 ISR(PORTC_INT0_vect)
 {
 	//disable interrupt
-	PORTC_INTCTRL = (0 & PORTC_INT0MASK);
+	PORTC.INTCTRL = (0);
 	accel_flag = 1;
-	//reti();
 }
 
 void intr_init(void)
@@ -81,5 +66,22 @@ void intr_init(void)
 	sei();
 }
 
+void wakeup_imu(void)
+{
+	uint8_t data = 0;
+	data = LSM_read((OUTX_L_XL));
+	//data = LSM_read((OUTX_L_XL));
+	usartd0_out_char(data);
+	data = LSM_read((OUTX_H_XL));
+	usartd0_out_char(data);
+	data = LSM_read((OUTY_L_XL));
+	usartd0_out_char(data);
+	data = LSM_read((OUTY_H_XL));
+	usartd0_out_char(data);
+	data = LSM_read((OUTZ_L_XL));
+	usartd0_out_char(data);
+	data = LSM_read((OUTZ_H_XL));
+	
+}
 
 //put gyroscope data here
