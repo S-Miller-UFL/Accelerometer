@@ -13,37 +13,73 @@
 #include <avr/io.h>
 #include "spi.h"
 #include "usart.h"
+#include <avr/interrupt.h>
 
 /*****************************END OF DEPENDENCIES******************************/
-
+volatile uint8_t accel_flag;
+void intr_init(void);
 int main(void)
 {
 	spi_init();
 	usartd0_init();
 	LSM_init();
-	//test code
-	//this polls the imu for new data and outputs it on port A
-	PORTA.DIRSET = 0xff;
-	PORTA.OUTSET = 0xff;
+	intr_init();
+	uint8_t data = 0;
+	accel_flag = 0;
+	/*
+	data = LSM_read((OUTX_L_XL));
+	data = LSM_read((OUTX_L_XL));
+	usartd0_out_char(data);
+	data = LSM_read((OUTX_H_XL));
+	usartd0_out_char(data);
+	data = LSM_read((OUTY_L_XL));
+	usartd0_out_char(data);
+	data = LSM_read((OUTY_H_XL));
+	usartd0_out_char(data);
+	data = LSM_read((OUTZ_L_XL));
+	usartd0_out_char(data);
+	data = LSM_read((OUTZ_H_XL));
+	usartd0_out_char(data);
+	*/
 	while(1)
 	{
-		//PORTA.OUT = LSM_read(OUTX_L_XL);
-		//PORTA.OUT = LSM_read(OUTX_H_XL);
-		//uint8_t y = OUTX_H_XL;
-		//char* x = (char*)OUTX_H_XL;
-		//usartd0_out_string_no_null("hello world!");
-		for(int i =0; i <10; i++)
+		if(accel_flag == 1)
 		{
-			//simulate x
-			usartd0_out_string_no_null(i);
-			//simulate y
-			usartd0_out_string_no_null(i*2 + 1);
-			//simulate z
-			usartd0_out_string_no_null(i*3 - 10);
-			
+			//send out data
+			//spi data register
+			data = LSM_read((OUTX_L_XL));
+			//data = LSM_read((OUTX_L_XL));
+			usartd0_out_char(data);
+			data = LSM_read((OUTX_H_XL));
+			usartd0_out_char(data);
+			data = LSM_read((OUTY_L_XL));
+			usartd0_out_char(data);
+			data = LSM_read((OUTY_H_XL));
+			usartd0_out_char(data);
+			data = LSM_read((OUTZ_L_XL));
+			usartd0_out_char(data);
+			data = LSM_read((OUTZ_H_XL));
+			usartd0_out_char(data);
+			accel_flag = 0;
+			PORTC_INTCTRL = (0|PORTC_INT0MASK);
 		}
-		
 	}
-	//end of test code
 	return 0;
 }
+
+ISR(PORTC_INT0_vect)
+{
+	//disable interrupt
+	PORTC_INTCTRL = (0 & PORTC_INT0MASK);
+	accel_flag = 1;
+	//reti();
+}
+
+void intr_init(void)
+{
+	PMIC.CTRL = (PMIC_MEDLVLEN_bm);
+	sei();
+}
+
+
+//put gyroscope data here

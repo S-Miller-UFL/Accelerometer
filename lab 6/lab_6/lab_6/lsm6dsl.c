@@ -59,7 +59,7 @@ uint8_t LSM_read(uint8_t reg_addr)
 void LSM_init(void)
 {
 	//restart device
-	lsm_write(CTRL3_C,LSM6DSL_RESET_DEVICE_BM);
+	lsm_write(CTRL3_C,LSM6DSL_RESET_DEVICE_BM | LSM6DSL_INT1_MAKE_ACTIVE_LOW);
 	//enable all axes
 	lsm_write(CTRL9_XL,LSM6DSL_ENABLE_ALLAXIS);
 	//output data rate and scale setting
@@ -68,6 +68,7 @@ void LSM_init(void)
 	lsm_write(INT1_CTRL,LSM6DSL_DRDY_XL_EN_BM);
 	//enable interrupt detection on port c PIN 7 of atx
 	PORTC_DIRCLR = (0|ATX128A1U_IMU_INT1_PIN_BM);
-	PORTC_PIN7CTRL= (0| ATX128A1U_RISING_EDGE_SENSE);
+	PORTC_PIN7CTRL= (0| ATX128A1U_ACTIVE_LOW_SENSE);
+	PORTC_INTCTRL = (0|ATX128A1U_INT0_EN_MED_BM);
 }
 /***************************END OF FUNCTION DEFINITIONS************************/

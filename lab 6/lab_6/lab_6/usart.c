@@ -71,11 +71,5 @@ void usartd0_out_string(const char * str)
 	while(*str) usartd0_out_char(*(str++));
 }
 
-void usartd0_out_string_no_null(const char* str)
-{
-
-		usartd0_out_char((str));
-
-}
 
 /***************************END OF FUNCTION DEFINITIONS************************/

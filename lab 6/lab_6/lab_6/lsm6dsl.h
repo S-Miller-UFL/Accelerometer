@@ -25,6 +25,7 @@
 #define LSM6DSL_SPI_WRITE_STROBE_bm				0x00
 //Miller, july 12 2023: added macros here:
 #define LSM6DSL_RESET_DEVICE_BM	(0x01<<0)
+#define LSM6DSL_INT1_MAKE_ACTIVE_LOW (0X01<<5)
 #define LSM6DSL_ENABLE_XAXIS (0X01 << 7)
 #define LSM6DSL_ENABLE_YAXIS (0X01 << 6)
 #define LSM6DSL_ENABLE_ZAXIS (0X01 << 5)
@@ -36,8 +37,10 @@
 #define LSM6DSL_DRDY_XL_EN_BM (0X01<<0)
 #define ATX128A1U_IMU_INT1_PIN_BM (0x01 <<6)
 #define ATX128A1U_IMU_INT2_PIN_BM (0x01 <<7)
-#define ATX128A1U_RISING_EDGE_SENSE (0X01 <<0)
-
+#define ATX128A1U_ACTIVE_LOW_SENSE (0X01 <<0 | 0x01<<1)
+#define ATX128A1U_INT0_EN_MED_BM (0x01 <<1)
+#define ATX128A1U_INT1_EN_MED_BM (0x01 <<3)
+#define ATX128A1U_INT_DIS_BM (0x00 <<0)
 /********************************END OF MACROS*********************************/
 
 #include <avr/io.h>
