@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-07-13T23:41:48.694Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="bgJMk5mjEywaCc8ECi70" version="21.6.2" type="device">
+<mxfile host="app.diagrams.net" modified="2023-07-16T16:47:47.508Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="-Eh-gV7cXALpF09s0ygs" version="21.6.1" type="device">
   <diagram name="Page-1" id="qsa8lmpZ-Dn-6WaB0Kn6">
-    <mxGraphModel dx="1118" dy="636" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2093" dy="955" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -95,6 +95,241 @@
         </mxCell>
         <mxCell id="aVugkzaTR4xHI4REmSyq-117" value="READ VALUE INTO TEMP VARIABLE" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="632" y="1112" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-2" target="5ic-kTnsCmhy27C2-hsG-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-2" value="ROUTINE &quot;MAIN&quot;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="176" y="1400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-4" target="5ic-kTnsCmhy27C2-hsG-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-4" value="CALL SUBROUTINE &quot;SPI_INIT&quot;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="177" y="1557" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-6" target="5ic-kTnsCmhy27C2-hsG-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-6" value="LOOP" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="544.92" y="1405" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-11" target="5ic-kTnsCmhy27C2-hsG-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-11" value="CALL OUTSIDE SUBROUTINE &quot;USARTD0_INIT&quot;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="182" y="1644" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-14" target="5ic-kTnsCmhy27C2-hsG-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-14" value="CALL OUTSIDE SUBROUTINE &quot;LSM_INIT&quot;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="328" y="1697" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-16" target="5ic-kTnsCmhy27C2-hsG-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-16" value="CALL LOCAL SUBROUTINE &quot;INTR_INIT&quot;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="329" y="1598" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-18" target="5ic-kTnsCmhy27C2-hsG-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-18" value="CALL LOCAL SUBROUTINE &quot;WAKEUP_ACCEL&quot;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1505" width="138" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-25" value="0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-23" target="5ic-kTnsCmhy27C2-hsG-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="509.92" y="1541" />
+              <mxPoint x="509.92" y="1435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-23" target="5ic-kTnsCmhy27C2-hsG-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-23" value="ACCEL_FLAG" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="556.92" y="1493" width="93" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-31" target="5ic-kTnsCmhy27C2-hsG-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-31" value="READ ACCELEROMETER X MEASUREMENT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="542.92" y="1624" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-34" target="5ic-kTnsCmhy27C2-hsG-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-34" value="OUTPUT MEASUREMENT OVER USART" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="542.92" y="1718" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-37" target="5ic-kTnsCmhy27C2-hsG-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-37" value="READ ACCELEROMETER Y MEASUREMENT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="724.92" y="1625" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-38" target="5ic-kTnsCmhy27C2-hsG-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-38" value="OUTPUT MEASUREMENT OVER USART" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="724.92" y="1719" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-41" target="5ic-kTnsCmhy27C2-hsG-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-41" value="READ ACCELEROMETER Z MEASUREMENT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="889.92" y="1625" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-42" target="5ic-kTnsCmhy27C2-hsG-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-42" value="OUTPUT MEASUREMENT OVER USART" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="889.92" y="1719" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-44" target="5ic-kTnsCmhy27C2-hsG-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-44" value="REENABLE INTERRUPTS ON PORT C" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="722.92" y="1811" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-46" target="5ic-kTnsCmhy27C2-hsG-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490.92" y="1841" />
+              <mxPoint x="490.92" y="1435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-46" value="CLEAR ACCEL_FLAG" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="542.92" y="1811" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-49" target="5ic-kTnsCmhy27C2-hsG-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-49" value="CLEAR ACCEL_FLAG" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="177" y="1477" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-54" target="5ic-kTnsCmhy27C2-hsG-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-54" value="LOCAL SUBROUTINE &quot;INTR_INIT&quot;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="243" y="1921" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-55" target="5ic-kTnsCmhy27C2-hsG-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-55" value="ENABLE MEDIUM LEVEL INTERRUPTS" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="391" y="1921" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-57" value="ENABLE GLOBAL INTERRUPTS" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="546" y="1922" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-59" target="5ic-kTnsCmhy27C2-hsG-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-59" value="PORT C LEVEL 0 ISR" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="889" y="1931" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-62" target="5ic-kTnsCmhy27C2-hsG-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-62" value="DISABLE MEDIUM LEVEL INTERRUPTS ON PORT C" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="889" y="2030" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-65" value="SET ACCEL_FLAG TO 1" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="889" y="2126" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-67" target="5ic-kTnsCmhy27C2-hsG-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-67" value="LOCAL SUBROUTINE &quot;WAKEUP_ACCEL&quot;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="194" y="2024" width="137" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-69" target="5ic-kTnsCmhy27C2-hsG-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-69" value="READ ACCELEROMETER X MEASUREMENT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="372" y="2024" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-71" target="5ic-kTnsCmhy27C2-hsG-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-71" value="OUTPUT MEASUREMENT OVER USART" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="371" y="2114" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-72" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-73" target="5ic-kTnsCmhy27C2-hsG-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-73" value="READ ACCELEROMETER Y MEASUREMENT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="539" y="2023" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-75" target="5ic-kTnsCmhy27C2-hsG-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-75" value="OUTPUT MEASUREMENT OVER USART" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="539" y="2117" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-77" target="5ic-kTnsCmhy27C2-hsG-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-77" value="READ ACCELEROMETER Z MEASUREMENT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="704" y="2023" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-78" value="OUTPUT MEASUREMENT OVER USART" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="704" y="2117" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-83" target="5ic-kTnsCmhy27C2-hsG-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-83" value="CALL LOCAL SUBROUTINE &quot;READ_GYRO&quot;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="891" y="1811" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-86" target="5ic-kTnsCmhy27C2-hsG-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-86" value="CALL LOCAL SUBROUTINE &quot;READ_GYRO&quot;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1404" width="138" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-92" target="5ic-kTnsCmhy27C2-hsG-94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-92" value="LOCAL SUBROUTINE &quot;READ_GYRO&quot;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="195" y="2193" width="137" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-93" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-94" target="5ic-kTnsCmhy27C2-hsG-96">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-94" value="READ GYRO PITCH MEASUREMENT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="373" y="2193" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-96" target="5ic-kTnsCmhy27C2-hsG-98">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-96" value="OUTPUT MEASUREMENT OVER USART" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="372" y="2283" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-97" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-98" target="5ic-kTnsCmhy27C2-hsG-100">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-98" value="READ GYRO ROLL MEASUREMENT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="2192" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-100" target="5ic-kTnsCmhy27C2-hsG-102">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-100" value="OUTPUT MEASUREMENT OVER USART" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="2286" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-101" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5ic-kTnsCmhy27C2-hsG-102" target="5ic-kTnsCmhy27C2-hsG-103">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-102" value="READ GYRO YAW MEASUREMENT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="705" y="2192" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ic-kTnsCmhy27C2-hsG-103" value="OUTPUT MEASUREMENT OVER USART" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="705" y="2286" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

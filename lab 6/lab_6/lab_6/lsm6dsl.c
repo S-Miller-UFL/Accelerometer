@@ -58,23 +58,34 @@ uint8_t LSM_read(uint8_t reg_addr)
 }
 void LSM_init(void)
 {
-
+	/*enable interrupt detection on port c PIN 6 of atx*/
+	//set pin 6 as input
+	PORTC.DIRCLR = (PORTC.DIRCLR|PIN6_bm);
+	//enable interrupts on pin 6
+	PORTC.INT0MASK = (PORTC.INT0MASK|PIN6_bm);
+	//make it sense low level
+	PORTC.PIN6CTRL= (PORTC.PIN6CTRL|PORT_ISC_LEVEL_gc);
+	//make it medium priority
+	PORTC.INTCTRL = (PORTC.INTCTRL|PORT_INT0LVL_MED_gc);
+	
 	//restart device
-	lsm_write(CTRL3_C,LSM6DSL_RESET_DEVICE_BM | LSM6DSL_INT1_MAKE_ACTIVE_LOW);
+	lsm_write(CTRL3_C,LSM6DSL_RESET_DEVICE_BM);
+	//make interrupts active low
+	lsm_write(CTRL3_C,LSM6DSL_INT1_MAKE_ACTIVE_LOW);
 	//enable all axes
 	lsm_write(CTRL9_XL,LSM6DSL_ENABLE_ALLAXIS);
 	//output data rate and scale setting
-	lsm_write((CTRL1_XL),((5<<4)|LSM6DSL_SCALE_2));
-	//ODR = 208 HZ
+	lsm_write((CTRL1_XL),(LSM6DSL_208HZ|LSM6DSL_SCALE_2));
+	//enable interrupt 1 for accel
 	lsm_write(INT1_CTRL,LSM6DSL_DRDY_XL_EN_BM);
-	/*enable interrupt detection on port c PIN 6 of atx*/
-	//set pin 6 as input
-	PORTC.DIRCLR = (0|PIN6_bm);
-	//enable interrupts on pin 6
-	PORTC.INT0MASK = (0|PIN6_bm);
-	//make it sense active low
-	PORTC.PIN6CTRL= (0|PORT_ISC_LEVEL_gc);
-	//make it medium priority
-	PORTC.INTCTRL = (0|PORT_INT0LVL_MED_gc);
+	//output data rate and scale setting
+	lsm_write((CTRL2_G),(LSM6DSL_208HZ|LSM6DSL_SCALE_2));
+	//enable interrupt 2 for gyro
+	lsm_write(INT2_CTRL,LSM6DSL_DRDY_GY_EN_BM);
+	
+	
+	
 }
+
+
 /***************************END OF FUNCTION DEFINITIONS************************/

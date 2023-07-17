@@ -22,14 +22,19 @@
 #define LSM6DSL_SPI_READ_STROBE_bm 				0x80
 #define LSM6DSL_SPI_WRITE_STROBE_bm				0x00
 //Miller, july 12 2023: added macros here:
+//UTILITIES
 #define LSM6DSL_RESET_DEVICE_BM	(0x01<<0)
 #define LSM6DSL_INT1_MAKE_ACTIVE_LOW (0X01<<5)
+#define LSM6DSL_SCALE_2 ((0X00 <<3) |(0X00 << 2))
+#define LSM6DSL_208HZ (5<<4)
+//ACCELEROMETER
 #define LSM6DSL_ENABLE_XAXIS (0X01 << 7)
 #define LSM6DSL_ENABLE_YAXIS (0X01 << 6)
 #define LSM6DSL_ENABLE_ZAXIS (0X01 << 5)
 #define LSM6DSL_ENABLE_ALLAXIS (LSM6DSL_ENABLE_XAXIS|LSM6DSL_ENABLE_YAXIS|LSM6DSL_ENABLE_ZAXIS)
-#define LSM6DSL_SCALE_2 ((0X00 <<3) |(0X00 << 2))
 #define LSM6DSL_DRDY_XL_EN_BM (0X01<<0)
+//GYROSCOPE
+#define LSM6DSL_DRDY_GY_EN_BM (0x01<<1)
 
 /********************************END OF MACROS*********************************/
 
